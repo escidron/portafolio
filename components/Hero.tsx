@@ -32,7 +32,7 @@ export default function Hero() {
           viewport={{ once: false, amount: 0.25 }}
           
         >
-        <h1 className='font-sans md:text-[45px] xl:text-[35px] 2xl:text-[50px] xl:leading-11 font-medium space-x-0 text-[#ebe7d7ea] xl:w-[70%] 2xl:w-[50%] mt-10 xl:mt-[100px] 2xl:mt-0' ><p className='text-[#7de24e] text-4xl md:text-[55px] xl:text-[45px] mb-3'>Software Development</p> it's about creating solutions that make a difference.</h1>
+        <h1 className='font-sans md:text-[45px] xl:text-[35px] 2xl:text-[50px] xl:leading-11 font-medium space-x-0 text-[#ebe7d7ea] xl:w-[70%] 2xl:w-[50%] mt-10 xl:mt-[100px] 2xl:mt-0' ><p className='text-[#7de24e] text-4xl md:text-[55px] xl:text-[45px] mb-3'>Software Development</p> it&apos;s about creating solutions that make a difference.</h1>
         {/* <Link href='#' className='button_slide slide_right'>VIEW PROJECTS</Link> */}
         <Link activeClass="active" to="projects"  smooth={true} offset={-10} duration={300} className='button_slide slide_right'><h1 className='links'>VIEW PROJECTS</h1></Link>
 

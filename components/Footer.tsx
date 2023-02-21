@@ -9,9 +9,6 @@ export default function Footer() {
         <div className='mx-auto  my-auto w-[200px] flex flex-col items-center justify-between'>
             <h1 className='text-[#7de24e] font-medium text-xl'>Eduardo Sanchez</h1>
             <h1 className='text-[#ebe7d7ea] font-medium text-[12px]'>Software Developer</h1>
-            {/* <LinkedInIcon fontSize='medium' sx={{color:'#ebe7d7ea',"&:hover": { transform: 'scale(1.2)' }}} />
-            <GitHubIcon fontSize='medium' sx={{color:'#ebe7d7ea' ,"&:hover": { transform: 'scale(1.2)' }}}/>
-            <InstagramIcon fontSize='medium' sx={{color:'#ebe7d7ea' ,"&:hover": { transform: 'scale(1.2)' }}} /> */}
         </div>
     </div>
   )
