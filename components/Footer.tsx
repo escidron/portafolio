@@ -16,7 +16,7 @@ export default function Footer() {
             </div>
         <div className=' my-auto w-[200px] flex flex-col items-center justify-between'>
             <h1 className='text-[#7de24e] font-medium text-xl'>Eduardo Sanchez</h1>
-            <h1 className='text-[#ebe7d7ea] font-medium text-[12px]'>Software Developer</h1>
+            <h1 className='text-[#ebe7d7ea] font-medium text-[12px]'>Software Engineer</h1>
         </div>
     </div>
   )

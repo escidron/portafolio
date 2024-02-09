@@ -1,6 +1,7 @@
 import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import Link from 'next/link';
 
 export default function Contact() { 
   return (
@@ -10,10 +11,10 @@ export default function Contact() {
             <EmailIcon sx={{color:'#e94134'}}/>
             <h4 className='text-[#ebe7d7ea] font-medium'>eduardosanchezcidron@gmail.com</h4>
         </div>
-        <div className='flex space-x-3 mt-4'>
+        <Link href='https://www.linkedin.com/in/eduardoscidron/' target="_blank" rel="noreferrer" className='flex space-x-3 mt-4'>
             <LinkedInIcon sx={{color:'#0a66c2'}}/>
             <h4 className='text-[#ebe7d7ea] font-medium'>www.linkedin.com/in/eduardoscidron/</h4>
-        </div>
+        </Link>
         <div className='flex space-x-3 mt-4'>
             <WhatsAppIcon sx={{color:'#005c4b'}}/>
             <h4 className='text-[#ebe7d7ea] font-medium'>+55 (11) 9 4880-8454</h4>

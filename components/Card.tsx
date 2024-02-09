@@ -1,7 +1,5 @@
 import Image, { StaticImageData } from 'next/image'
 import React from 'react'
-import img from '../public/planet2.jpg'
-import {Button} from '@mui/material'
 import Link from 'next/link'
 import GitHubIcon from '@mui/icons-material/GitHub';
 
@@ -33,13 +31,9 @@ export default function Card({project}:{project:Project}) {
             {project.tools.map((tool)=>(
               <h4 key={tool} className="text-slate-400 font-mono font-bold  text-[12px] md:text-[16px]">{tool}</h4>
             ))}
-            {/* <h4 className="text-slate-400 font-mono font-bold  text-[12px]">REACT.JS</h4>
-            <h4 className="text-slate-400 font-mono font-bold  text-[12px]">TAILWIND CSS</h4>
-            <h4 className="text-slate-400 font-mono font-bold  text-[12px]">MATERIAL UI</h4> */}
           </div>
-          <GitHubIcon className='mt-[20px] lg:mt-[80px]' fontSize='large' sx={{color:'#ebe7d7ea' ,marginInline:'auto',"&:hover": { transform: 'scale(1.2)' }}}/>
-
-          <Link href={project.link} className='h-[40px] mx-auto mt-5 bg-[#7de24e] lg:mt-auto mb-5 max-w-[200px] rounded-lg text-[#1a1b26] font-bold px-4 py-2 flex justify-center items-center transition-transform hover:scale-110'>VISIT THE WEBSITE</Link>
+          <GitHubIcon className='mt-[20px] lg:mt-[80px] cursor-pointer' fontSize='large' sx={{color:'#ebe7d7ea' ,marginInline:'auto',"&:hover": { transform: 'scale(1.2)' }}}/>
+          <Link href={project.link} target='_blank' rel="noreferrer" className='h-[40px] mx-auto mt-5 bg-[#7de24e] lg:mt-auto mb-5 max-w-[200px] rounded-lg text-[#1a1b26] font-bold px-4 py-2 flex justify-center items-center transition-transform hover:scale-110'>VISIT THE WEBSITE</Link>
         </div>
 
     </div>

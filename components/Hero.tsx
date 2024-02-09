@@ -1,5 +1,4 @@
 import Image from 'next/image'
-// import Link from 'next/link'
 import logoReact from '../public/react.png'
 import nextLogo from '../public/next.png'
 import typescriptLogo from '../public/typscript.png'
@@ -16,7 +15,6 @@ import reduxLogo from '../public/redux.jpg'
 import gitLogo from '../public/git.png'
 import npmLogo from '../public/npm.png'
 import SouthIcon from '@mui/icons-material/South';
-// import Typewriter from 'typewriter-effect';
 import {  heroVariants,heroVariants2 } from '../utils/motion';
 import { motion } from 'framer-motion'
 import { Link } from 'react-scroll'
@@ -29,11 +27,9 @@ export default function Hero() {
           variants={heroVariants}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.25 }}
-          
+          viewport={{ once: false, amount: 0.25 }} 
         >
-        <h1 className='font-sans md:text-[45px] xl:text-[35px] 2xl:text-[50px] xl:leading-11 font-medium space-x-0 text-[#ebe7d7ea] xl:w-[70%] 2xl:w-[50%] mt-10 xl:mt-[100px] 2xl:mt-0' ><p className='text-[#7de24e] text-4xl md:text-[55px] xl:text-[45px] mb-3'>Software Development</p> it&apos;s about creating solutions that make a difference.</h1>
-        {/* <Link href='#' className='button_slide slide_right'>VIEW PROJECTS</Link> */}
+        <h1 className='font-sans md:text-[45px] xl:text-[35px] 2xl:text-[50px] xl:leading-11 font-medium space-x-0 text-[#ebe7d7ea] xl:w-[70%] 2xl:w-[50%] mt-10 xl:mt-[100px] 2xl:mt-0' ><p className='text-[#7de24e] text-4xl md:text-[55px] xl:text-[45px] mb-3'>Software Engineering</p> it&apos;s about creating solutions that make a difference.</h1>
         <Link activeClass="active" to="projects"  smooth={true} offset={-10} duration={300} className='button_slide slide_right'><h1 className='links'>VIEW PROJECTS</h1></Link>
 
       </motion.div>
@@ -83,7 +79,6 @@ export default function Hero() {
 
         }}
       >
-        {/* <Link href='#' ><SouthIcon fontSize='large' sx={{color:'#7de24e'}}/></Link> */}
         <Link activeClass="active" to="about"  smooth={true} offset={-10} duration={300} ><SouthIcon fontSize='large' sx={{color:'#7de24e',cursor:'pointer'}}/></Link>
 
       </motion.div>
